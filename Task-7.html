@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Task-7/task-7.css">
+    <title>Media Query</title>
+</head>
+
+<body>
+    <div style="display:flex;">
+        <nav>
+            <img src="Task-7/projectLogo.png" alt="Logo" class="logo">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#reservation">Reservation</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#about">About</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="social-icons">
+            <img src="Task-7/facebook-svg.svg" alt=" facebook" class="facebook">
+            <img src="Task-7/whatsapp.png" alt="whatsapp" class="whatsapp">
+            <img src="Task-7/tweeter.png" alt="tweeter" class="tweeter">
+            <div class="icon" onclick="openSidePanel()">
+                &#9776;
+            </div>
+        </div>
+    </div>
+    <div class="sidepanel" id="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidePanel()">&times;</a>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#reservation">Reservation</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <section class="section1">
+        <h1 class="font1">WElCOME to</h1>
+        <h1 class="font2">PATO PLACE</h1>
+        <button class="look-menu-btn">
+            LOOK MENU
+        </button>
+    </section>
+    <script>
+        function openSidePanel() {
+            document.getElementById("sidepanel").style.width = "250px";
+        }
+
+        function closeSidePanel() {
+            document.getElementById("sidepanel").style.width = "0";
+        }
+    </script>
+
+</body>
+
+</html>

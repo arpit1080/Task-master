@@ -1,0 +1,271 @@
+body {
+    background-image: url(cutlery-pot-near-twig.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    height: 100%;
+    color: white;
+}
+
+.whatsapp {
+    height: 40px;
+    width: 35px;
+}
+
+.tweeter {
+    height: 35px;
+    width: 35px;
+}
+
+.facebook {
+    height: 35px;
+    width: 35px;
+}
+
+nav {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-align: center;
+    padding: 50px 5px;
+    text-decoration: none;
+    align-items: center;
+    font-size: 30px;
+
+}
+
+.font1 {
+    color: aliceblue;
+    font-family: Segoe Script;
+    font-size: 100px;
+}
+
+.font2 {
+    color: aliceblue;
+    font-size: 200px;
+}
+
+.logo {
+    padding: 50px 35px;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1 {
+    margin: 0;
+}
+
+.look-menu-btn {
+    margin-top: 45px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 20px;
+    color: red;
+}
+
+.sidepanel {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidepanel a:hover {
+    color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.icon {
+    display: none;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+
+@media(min-width: 0px) and (max-width: 412px) {
+    nav a {
+        display: none;
+    }
+
+    .icon {
+        display: block;
+        padding-right: 20px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .font1 {
+        font-size: 20px;
+    }
+
+    .font2 {
+        font-size: 40px;
+    }
+
+    .logo {
+        height: 30px;
+        width: 50px;
+    }
+
+    .look-menu-btn {
+        margin-top: 25px;
+        border: 1px solid white;
+        border-radius: 3px;
+        padding: 5px;
+        font-size: 5px;
+        color: red;
+    }
+}
+
+@media(min-width: 412px) and (max-width: 768px) {
+    nav a {
+        display: none;
+    }
+
+    .icon {
+        display: block;
+        padding-right: 20px;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    .font1 {
+        font-size: 40px;
+    }
+
+    .font2 {
+        font-size: 60px;
+    }
+
+    .logo {
+        height: 30px;
+        width: 50px;
+    }
+
+    .look-menu-btn {
+        margin-top: 35px;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 10px;
+        color: red;
+    }
+}
+
+
+@media(min-width: 768px) and (max-width: 1023px) {
+    nav a {
+        display: none;
+    }
+
+    .icon {
+        display: block;
+        padding-right: 20px;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    .font1 {
+        font-size: 40px;
+    }
+
+    .font2 {
+        font-size: 60px;
+    }
+
+    .logo {
+        height: 50px;
+        width: 70px;
+    }
+
+    .look-menu-btn {
+        margin-top: 40px;
+        border: 1px solid white;
+        border-radius: 7px;
+        padding: 10px;
+        font-size: 15px;
+        color: red;
+    }
+}
+
+@media(min-width: 1023px) {
+    /* nav a {
+        display: none;
+    } */
+
+    .icon {
+        display: none;
+        padding-right: 20px;
+    }
+
+    nav {
+        display: flex;
+        gap: 30px;
+        /* justify-content: space-around; */
+    }
+
+    .font1 {
+        font-size: 70px;
+    }
+
+    .font2 {
+        font-size: 90px;
+    }
+
+    .look-menu-btn {
+        margin-top: 40px;
+        border: 1px solid white;
+        border-radius: 7px;
+        padding: 10px;
+        font-size: 20px;
+        color: red;
+    }
+}
